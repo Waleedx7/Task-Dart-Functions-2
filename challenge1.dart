@@ -4,6 +4,18 @@
  * - that prints your name on the screen.
  */
 
+void main() {
+  // const name = 'waleed';
+  printname('coded');
+  printAge(20);
+  printHello('waleed', 'es');
+  printMax(10, 5);
+}
+
+void printname(String name) {
+  print("my name is $name");
+}
+
 /**
  * Task 2:
  * Create a function called `printAge`
@@ -11,6 +23,12 @@
  * - and prints the age on the screen.
  * - Age = current year - birth
  */
+
+void printAge(int Age) {
+  int Result = 2023 - Age;
+
+  print(Result);
+}
 
 /**
  * Task 3:
@@ -23,9 +41,29 @@
  * -- tr: it should print `Merhaba NAME`
  */
 
+void printHello(String Name, String language) {
+  if (language == 'en') {
+    print("Hello $Name");
+  } else if (language == 'es') {
+    print("Hola $Name");
+  } else if (language == 'fr') {
+    print("Bonjour $Name");
+  } else {
+    print("Merhaba $Name");
+  }
+}
+
 /**
  * Task 4:
  * Create a function called `printMax`
  * - that takes two numbers as parameters,
  * - and prints out the bigger number
  */
+
+void printMax(num1, num2) {
+  if (num1 > num2) {
+    print(num1);
+  } else {
+    print(num2);
+  }
+}
