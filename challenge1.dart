@@ -1,3 +1,5 @@
+import 'challenge2.dart';
+
 /**
  * Task 1:
  * Create a function called `printName`
@@ -6,10 +8,11 @@
 
 void main() {
   // const name = 'waleed';
-  printname('coded');
-  printAge(20);
-  printHello('waleed', 'es');
+  printname('waleed');
+  printAge(27);
+  printHello('waleed', 'fr');
   printMax(10, 5);
+  greetMe(firstname: 'waleed', age: 25);
 }
 
 void printname(String name) {
@@ -25,7 +28,7 @@ void printname(String name) {
  */
 
 void printAge(int Age) {
-  int Result = 2023 - Age;
+  int Result = (2023 - Age);
 
   print(Result);
 }

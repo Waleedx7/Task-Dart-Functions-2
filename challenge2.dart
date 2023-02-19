@@ -1,3 +1,13 @@
+void main() {
+  greetMe(firstname: 'waleed', age: 25);
+}
+//   const name = 'waleed';
+//   // printname('waleed');
+//   // printAge(27);
+//   // printHello('waleed', 'fr');
+//   // printMax(10, 5);
+// }
+
 /**
  * greet(name):
  * - receives a name,
@@ -6,8 +16,8 @@
  * e.g.
  * greet("Hamza") => prints "Hello Hamza"
  */
-void greet(String name) {
-  // Your code here
+void greetMe({String? firstname = "", int age = 25}) {
+  print("hello my name is $firstname and I'm $age years old ");
 }
 
 /**
@@ -20,7 +30,7 @@ void greet(String name) {
  * isOdd(10) -> false
  */
 bool isOdd(int n) {
-  // Your code here
+  return n % 2 != 0;
 }
 
 /**
@@ -32,8 +42,15 @@ bool isOdd(int n) {
  * oddsSmallerThan(7) -> 3
  * oddsSmallerThan(15) -> 7
  */
+
 int oddsSmallerThan(int n) {
-  // Your code here
+  int count = 0;
+  for (int i = 0; i < n;) {
+    if (isOdd(i)) {
+      count++;
+    }
+  }
+  return count;
 }
 
 /**
@@ -47,5 +64,9 @@ int oddsSmallerThan(int n) {
  * squareOrDouble(9) -> 81
  */
 int squareOrDouble(int n) {
-  // Your code here
+  if (n % 2 == 0) {
+    return n * 2;
+  } else {
+    return n * n;
+  }
 }
